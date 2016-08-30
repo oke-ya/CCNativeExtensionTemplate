@@ -1,12 +1,12 @@
 //
-//  CCFirebase.cpp
-//  CCFirebase
+//  CCNativeExtensionTemplate.cpp
+//  CCNativeExtensionTemplate
 //
 //  Created by Atsushi Yoshida on 2016/08/23.
 //
 //
 
-#include "CCFirebase.h"
+#include "CCNativeExtensionTemplate.h"
 
 namespace oke_ya{
 

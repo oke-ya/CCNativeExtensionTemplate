@@ -1,13 +1,13 @@
 //
-//  CCFirebase.h
+//  CCNativeExtensionTemplate.h
 //  
 //
 //  Created by Atsushi Yoshida on 2016/08/23.
 //
 //
 
-#ifndef CCFirebase_h
-#define CCFirebase_h
+#ifndef CCNativeExtensionTemplate_h
+#define CCNativeExtensionTemplate_h
 
 namespace oke_ya{
 
@@ -22,4 +22,4 @@ public:
 
 }
 
-#endif /* CCFirebase_h */
+#endif /* CCNativeExtensionTemplate_h */

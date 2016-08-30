@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		248FAD131D6C5207008BA12E /* CCFirebase-ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 240E1EA31D6C39AF00E85FE1 /* CCFirebase-ios.mm */; };
-		248FAD171D6C52EE008BA12E /* CCFirebase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 248FAD151D6C52EE008BA12E /* CCFirebase.cpp */; };
-		248FAD191D6C5480008BA12E /* CCFirebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 240E1E9C1D6C339100E85FE1 /* CCFirebase.h */; };
-		248FAD1A1D6C549B008BA12E /* CCFirebase-ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 240E1EA21D6C398300E85FE1 /* CCFirebase-ios.h */; };
+		248FAD131D6C5207008BA12E /* CCNativeExtensionTemplate-ios.mm in Sources */ = {isa = PBXBuildFile; fileRef = 240E1EA31D6C39AF00E85FE1 /* CCNativeExtensionTemplate-ios.mm */; };
+		248FAD171D6C52EE008BA12E /* CCNativeExtensionTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 248FAD151D6C52EE008BA12E /* CCNativeExtensionTemplate.cpp */; };
+		248FAD191D6C5480008BA12E /* CCNativeExtensionTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 240E1E9C1D6C339100E85FE1 /* CCNativeExtensionTemplate.h */; };
+		248FAD1A1D6C549B008BA12E /* CCNativeExtensionTemplate-ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 240E1EA21D6C398300E85FE1 /* CCNativeExtensionTemplate-ios.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		240E1E9C1D6C339100E85FE1 /* CCFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCFirebase.h; path = ../Classes/CCFirebase.h; sourceTree = "<group>"; };
-		240E1EA21D6C398300E85FE1 /* CCFirebase-ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CCFirebase-ios.h"; path = "../Classes/ios/CCFirebase-ios.h"; sourceTree = "<group>"; };
-		240E1EA31D6C39AF00E85FE1 /* CCFirebase-ios.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "CCFirebase-ios.mm"; path = "../Classes/ios/CCFirebase-ios.mm"; sourceTree = "<group>"; };
-		240E1EA81D6C3B5900E85FE1 /* libCCFirebase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCCFirebase.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		248FAD151D6C52EE008BA12E /* CCFirebase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCFirebase.cpp; path = ../Classes/CCFirebase.cpp; sourceTree = "<group>"; };
+		240E1E9C1D6C339100E85FE1 /* CCNativeExtensionTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCNativeExtensionTemplate.h; path = ../Classes/CCNativeExtensionTemplate.h; sourceTree = "<group>"; };
+		240E1EA21D6C398300E85FE1 /* CCNativeExtensionTemplate-ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CCNativeExtensionTemplate-ios.h"; path = "../Classes/ios/CCNativeExtensionTemplate-ios.h"; sourceTree = "<group>"; };
+		240E1EA31D6C39AF00E85FE1 /* CCNativeExtensionTemplate-ios.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = "CCNativeExtensionTemplate-ios.mm"; path = "../Classes/ios/CCNativeExtensionTemplate-ios.mm"; sourceTree = "<group>"; };
+		240E1EA81D6C3B5900E85FE1 /* libCCNativeExtensionTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCCNativeExtensionTemplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FAD151D6C52EE008BA12E /* CCNativeExtensionTemplate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCNativeExtensionTemplate.cpp; path = ../Classes/CCNativeExtensionTemplate.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +44,8 @@
 			isa = PBXGroup;
 			children = (
 				240E1EA01D6C38FB00E85FE1 /* ios */,
-				240E1E9C1D6C339100E85FE1 /* CCFirebase.h */,
-				248FAD151D6C52EE008BA12E /* CCFirebase.cpp */,
+				240E1E9C1D6C339100E85FE1 /* CCNativeExtensionTemplate.h */,
+				248FAD151D6C52EE008BA12E /* CCNativeExtensionTemplate.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -53,8 +53,8 @@
 		240E1EA01D6C38FB00E85FE1 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				240E1EA31D6C39AF00E85FE1 /* CCFirebase-ios.mm */,
-				240E1EA21D6C398300E85FE1 /* CCFirebase-ios.h */,
+				240E1EA31D6C39AF00E85FE1 /* CCNativeExtensionTemplate-ios.mm */,
+				240E1EA21D6C398300E85FE1 /* CCNativeExtensionTemplate-ios.h */,
 			);
 			name = ios;
 			sourceTree = "<group>";
@@ -62,7 +62,7 @@
 		240E1EA91D6C3B5900E85FE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				240E1EA81D6C3B5900E85FE1 /* libCCFirebase.a */,
+				240E1EA81D6C3B5900E85FE1 /* libCCNativeExtensionTemplate.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,17 +74,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248FAD1A1D6C549B008BA12E /* CCFirebase-ios.h in Headers */,
-				248FAD191D6C5480008BA12E /* CCFirebase.h in Headers */,
+				248FAD1A1D6C549B008BA12E /* CCNativeExtensionTemplate-ios.h in Headers */,
+				248FAD191D6C5480008BA12E /* CCNativeExtensionTemplate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		240E1EA71D6C3B5900E85FE1 /* CCFirebase */ = {
+		240E1EA71D6C3B5900E85FE1 /* CCNativeExtensionTemplate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 240E1EAF1D6C3B5900E85FE1 /* Build configuration list for PBXNativeTarget "CCFirebase" */;
+			buildConfigurationList = 240E1EAF1D6C3B5900E85FE1 /* Build configuration list for PBXNativeTarget "CCNativeExtensionTemplate" */;
 			buildPhases = (
 				240E1EA41D6C3B5900E85FE1 /* Sources */,
 				240E1EA51D6C3B5900E85FE1 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = CCFirebase;
-			productName = CCFirebase;
-			productReference = 240E1EA81D6C3B5900E85FE1 /* libCCFirebase.a */;
+			name = CCNativeExtensionTemplate;
+			productName = CCNativeExtensionTemplate;
+			productReference = 240E1EA81D6C3B5900E85FE1 /* libCCNativeExtensionTemplate.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 240E1E951D6C333E00E85FE1 /* Build configuration list for PBXProject "CCFirebase" */;
+			buildConfigurationList = 240E1E951D6C333E00E85FE1 /* Build configuration list for PBXProject "CCNativeExtensionTemplate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				240E1EA71D6C3B5900E85FE1 /* CCFirebase */,
+				240E1EA71D6C3B5900E85FE1 /* CCNativeExtensionTemplate */,
 			);
 		};
 /* End PBXProject section */
@@ -134,8 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248FAD171D6C52EE008BA12E /* CCFirebase.cpp in Sources */,
-				248FAD131D6C5207008BA12E /* CCFirebase-ios.mm in Sources */,
+				248FAD171D6C52EE008BA12E /* CCNativeExtensionTemplate.cpp in Sources */,
+				248FAD131D6C5207008BA12E /* CCNativeExtensionTemplate-ios.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +247,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		240E1E951D6C333E00E85FE1 /* Build configuration list for PBXProject "CCFirebase" */ = {
+		240E1E951D6C333E00E85FE1 /* Build configuration list for PBXProject "CCNativeExtensionTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				240E1E961D6C333E00E85FE1 /* Debug */,
@@ -256,7 +256,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		240E1EAF1D6C3B5900E85FE1 /* Build configuration list for PBXNativeTarget "CCFirebase" */ = {
+		240E1EAF1D6C3B5900E85FE1 /* Build configuration list for PBXNativeTarget "CCNativeExtensionTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				240E1EB01D6C3B5900E85FE1 /* Debug */,

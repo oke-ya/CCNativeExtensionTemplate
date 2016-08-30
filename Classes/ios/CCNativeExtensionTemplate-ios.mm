@@ -1,6 +1,6 @@
 //
-//  CCFirebase-ios.m
-//  CCFirebase
+//  CCNativeExtensionTemplate-ios.m
+//  CCNativeExtensionTemplate
 //
 //  Created by Atsushi Yoshida on 2016/08/23.
 //
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "CCFirebase-ios.h"
+#include "CCNativeExtensionTemplate-ios.h"
 
 #include "cocos2d.h"
 using namespace cocos2d;
@@ -24,7 +24,7 @@ Firebase* Firebase::getInstance()
         {
             delete s_sharedFirebase;
             s_sharedFirebase = nullptr;
-            CCLOG("ERROR: Could not init CCFirebaseIos");
+            CCLOG("ERROR: Could not init CCNativeExtensionTemplateIos");
         }
     }
     return s_sharedFirebase;

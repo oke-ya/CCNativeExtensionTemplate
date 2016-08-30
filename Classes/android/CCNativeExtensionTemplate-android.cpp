@@ -1,4 +1,4 @@
-#include "CCFirebase-android.h"
+#include "CCNativeExtensionTemplate-android.h"
 #include "platform/android/jni/JniHelper.h"
 #include "cocos2d.h"
 
@@ -7,7 +7,7 @@ using namespace cocos2d;
 namespace oke_ya{
 
 
-static const std::string helperClassName = "com/oke_ya/ccfirebase/CCFirebase";
+static const std::string helperClassName = "com/oke_ya/ccfirebase/CCNativeExtensionTemplate";
 
 Firebase* Firebase::getInstance()
 {
@@ -18,7 +18,7 @@ Firebase* Firebase::getInstance()
         {
             delete s_sharedFirebase;
             s_sharedFirebase = nullptr;
-            CCLOG("ERROR: Could not init CCFirebaseAndroid");
+            CCLOG("ERROR: Could not init CCNativeExtensionTemplateAndroid");
         }
     }
     return s_sharedFirebase;

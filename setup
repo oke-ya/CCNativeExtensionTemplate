@@ -1,0 +1,27 @@
+#!/bin/bash
+
+DIR="$(dirname "$0")/*"
+
+ORIG_NAME="CCNativeExtensionTemplate"
+MODULE_NAME="$1"
+
+if [ -z "$MODULE_NAME" ];then
+    cat<<EOF
+usage: setup MODULE_NAME
+EOF
+exit 1
+fi
+
+SUBDIRS=$(find $DIR -type d -maxdepth 0)
+FILES=$(find $SUBDIRS -type f )
+CMD="s/${ORIG_NAME}/${MODULE_NAME}/g"
+perl -i.bak -pe "$CMD" $FILES
+find . -name '*.bak' -delete
+
+
+FILES=$(find $SUBDIRS -name ${ORIG_NAME}*)
+for f in $FILES;do
+    DESTNAME=$(echo $f | sed -e $CMD)
+    mv $f $DESTNAME
+done
+
