@@ -10,9 +10,9 @@
 
 namespace oke_ya{
 
-Firebase* Firebase::s_sharedFirebase = nullptr;
+NativeExtensionTemplate* NativeExtensionTemplate::s_sharedNativeExtensionTemplate = nullptr;
 
-bool Firebase::init()
+bool NativeExtensionTemplate::init()
 {
     return true;
 }

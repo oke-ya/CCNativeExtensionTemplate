@@ -7,24 +7,24 @@ using namespace cocos2d;
 namespace oke_ya{
 
 
-static const std::string helperClassName = "com/oke_ya/ccfirebase/CCNativeExtensionTemplate";
+static const std::string helperClassName = "com/oke_ya/ccnatie_extension_template/CCNativeExtensionTemplate";
 
-Firebase* Firebase::getInstance()
+NativeExtensionTemplate* NativeExtensionTemplate::getInstance()
 {
-    if (s_sharedFirebase == nullptr)
+    if (s_sharedNativeExtensionTemplate == nullptr)
     {
-        s_sharedFirebase = new (std::nothrow) FirebaseAndroid();
-        if(!s_sharedFirebase->init())
+        s_sharedNativeExtensionTemplate = new (std::nothrow) NativeExtensionTemplateAndroid();
+        if(!s_sharedNativeExtensionTemplate->init())
         {
-            delete s_sharedFirebase;
-            s_sharedFirebase = nullptr;
+            delete s_sharedNativeExtensionTemplate;
+            s_sharedNativeExtensionTemplate = nullptr;
             CCLOG("ERROR: Could not init CCNativeExtensionTemplateAndroid");
         }
     }
-    return s_sharedFirebase;
+    return s_sharedNativeExtensionTemplate;
 }
 
-void FirebaseAndroid::showAds() const
+void NativeExtensionTemplateAndroid::showAds() const
 {
     JniHelper::callStaticVoidMethod(helperClassName, "showAds");
 }

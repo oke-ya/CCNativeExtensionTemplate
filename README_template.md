@@ -28,7 +28,7 @@ $ git submodule add YOUR_REPOS_URL Vendor/CCNativeExtensionTemplate
 ```
 include ':libcocos2dx'
 project(':libcocos2dx').projectDir = new File(settingsDir, '../cocos2d/cocos/platform/android/libcocos2dx')
-include 'firebase'
+include 'natie_extension_template'
 project(':native_extension_template').projectDir = new File(settingsDir, '../Vendor/CCNativeExtensionTemplate/proj.android')
 ```
 

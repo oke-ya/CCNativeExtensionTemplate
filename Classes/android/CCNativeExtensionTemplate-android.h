@@ -17,7 +17,7 @@
 
 namespace oke_ya{
 
-class FirebaseAndroid : public Firebase
+class NativeExtensionTemplateAndroid : public NativeExtensionTemplate
 {
     virtual void showAds() const override;
 };

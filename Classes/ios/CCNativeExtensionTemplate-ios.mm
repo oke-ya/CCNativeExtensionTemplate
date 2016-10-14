@@ -15,24 +15,24 @@ using namespace cocos2d;
 
 namespace oke_ya{
     
-Firebase* Firebase::getInstance()
+NativeExtensionTemplate* NativeExtensionTemplate::getInstance()
 {
-    if (s_sharedFirebase == nullptr)
+    if (s_sharedNativeExtensionTemplate == nullptr)
     {
-        s_sharedFirebase = new (std::nothrow) FirebaseIos();
-        if(!s_sharedFirebase->init())
+        s_sharedNativeExtensionTemplate = new (std::nothrow) NativeExtensionTemplateIos();
+        if(!s_sharedNativeExtensionTemplate->init())
         {
-            delete s_sharedFirebase;
-            s_sharedFirebase = nullptr;
+            delete s_sharedNativeExtensionTemplate;
+            s_sharedNativeExtensionTemplate = nullptr;
             CCLOG("ERROR: Could not init CCNativeExtensionTemplateIos");
         }
     }
-    return s_sharedFirebase;
+    return s_sharedNativeExtensionTemplate;
 }
 
-void FirebaseIos::showAds() const
+void NativeExtensionTemplateIos::showAds() const
 {
-    log("Firebase::showAds()");
+    log("NativeExtensionTemplate::showAds()");
 }
 
 }

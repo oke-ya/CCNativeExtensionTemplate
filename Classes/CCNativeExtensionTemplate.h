@@ -11,11 +11,11 @@
 
 namespace oke_ya{
 
-class Firebase
+class NativeExtensionTemplate
 {
 public:
-    static Firebase* getInstance();
-    static Firebase* s_sharedFirebase;
+    static NativeExtensionTemplate* getInstance();
+    static NativeExtensionTemplate* s_sharedNativeExtensionTemplate;
     virtual bool init();
     virtual void showAds() const = 0;
 };
