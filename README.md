@@ -6,5 +6,13 @@ Covered for both android and ios environment.
 ## Getting start
 
 ```
-$ ./setup YOUR_MODULE_NAME
+$ curl -o CCNativeExtensionTEmplate.zip https://codeload.github.com/oke-ya/CCNativeExtensionTemplate/zip/master
+$ unzip CCNativeExtensionTEmplate.zip
+$ cd CCNativeExtensionTemplate-master
+$ ./setup CCFirebase # Firebase is example.
+$ git init
+$ git add -A
+$ git commit -m 'initial commit'
+$ mv ..
+$ mv CCNativeExtensionTemplate-master CCFirebase # Firebase is example.
 ```
