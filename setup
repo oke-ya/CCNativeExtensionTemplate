@@ -3,7 +3,9 @@
 DIR="$(dirname "$0")/*"
 
 ORIG_NAME="CCNativeExtensionTemplate"
+NO_PREFIX_ORIG_NAME="NativeExtensionTemplate"
 MODULE_NAME="$1"
+NO_PREFIX_MODULE_NAME=$(echo $MODULE_NAME | perl -pe 's/^CC//g')
 
 if [ -z "$MODULE_NAME" ];then
     cat<<EOF
@@ -21,6 +23,7 @@ SUBDIRS=$(find $DIR -type d -maxdepth 0)
 FILES=$(find $SUBDIRS -type f )
 CMD="s/${ORIG_NAME}/${MODULE_NAME}/g"
 perl -i.bak -pe "$CMD" $FILES
+perl -i.bak -pe "s/${NO_PREFIX_ORIG_NAME}/${NO_PREFIX_MODULE_NAME}/g" $FILES
 perl -i.bak -pe "$CMD" README_template.md
 perl -i.bak -pe "s/native_extension_template/${UNDER_SCORE_NAME}/g" README_template.md
 mv README_template.md README.md
